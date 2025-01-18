@@ -1,15 +1,23 @@
+import Header from './components/Header'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
+import Footer from './components/Footer'
+import Blogs from './sections/Blogs'
 
-const App = () => {
+export default function App() {
   return (
-    <div className="container mx-auto max-w-2xl">
-    <div className="w-full bg-red-600 py-1"></div>
-      <div className="flex flex-col gap-2 mt-4">
-      <a href="https://devtools.amansaw.com" target="_blank">Developer Tools</a>
-      <a href="https://cockpit.amansaw.com" target="_blank">Cockpit Login</a>
-      <a href="https://books.amansaw.com" target="_blank">Book Library</a>
-</div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <About />
+        <Projects />
+        <Blogs />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-  );
-};
-
-export default App;
+  )
+}
