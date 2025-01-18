@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white dark:bg-gray-900 py-4 shadow-inner transition-colors">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="text-gray-600 dark:text-gray-400">
-          &copy; {new Date().getFullYear()}{' '}
+          &copy; {new Date().getFullYear()}{" "}
           <a
             href={links.website}
             target="_blank"
@@ -18,5 +18,5 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  )
+  );
 }

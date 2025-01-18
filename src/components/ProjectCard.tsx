@@ -1,10 +1,10 @@
-import {ProjectData} from "@/types"
+import { ProjectData } from "@/types";
 
 type ProjectCardProps = {
-  project: ProjectData
-}
+  project: ProjectData;
+};
 
-export default function ProjectCard({project}: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-gray-900 rounded-lg shadow p-4 flex flex-col justify-between transition-colors">
       <div>
@@ -48,5 +48,5 @@ export default function ProjectCard({project}: ProjectCardProps) {
         )}
       </div>
     </div>
-  )
+  );
 }

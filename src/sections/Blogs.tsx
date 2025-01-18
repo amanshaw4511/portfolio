@@ -1,33 +1,33 @@
-import { blogs } from '@/config'
-import { DevToArticle } from '@/types'
-import { useEffect, useState } from 'react'
+import { blogs } from "@/config";
+import { DevToArticle } from "@/types";
+import { useEffect, useState } from "react";
 
 export default function Blogs() {
-  const [articles, setArticles] = useState<DevToArticle[]>([])
-  const [loading, setLoading] = useState<boolean>(true)
-  const [error, setError] = useState<string>('')
+  const [articles, setArticles] = useState<DevToArticle[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
-    const url = `https://dev.to/api/articles?username=${blogs.devtoUsername}`
+    const url = `https://dev.to/api/articles?username=${blogs.devtoUsername}`;
 
     const fetchArticles = async () => {
       try {
-        const response = await fetch(url)
+        const response = await fetch(url);
         if (!response.ok) {
-          throw new Error(`Error: ${response.status}`)
+          throw new Error(`Error: ${response.status}`);
         }
-        const data = await response.json()
-        setArticles(data)
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const data = await response.json();
+        setArticles(data);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
-        setError(err.message)
+        setError(err.message);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
-    fetchArticles()
-  }, [])
+    fetchArticles();
+  }, []);
 
   if (loading) {
     return (
@@ -41,7 +41,7 @@ export default function Blogs() {
           </p>
         </div>
       </section>
-    )
+    );
   }
 
   if (error) {
@@ -56,7 +56,7 @@ export default function Blogs() {
           </p>
         </div>
       </section>
-    )
+    );
   }
 
   return (
@@ -78,7 +78,8 @@ export default function Blogs() {
                 {article.title}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                Published on: {new Date(article.published_at).toLocaleDateString()}
+                Published on:{" "}
+                {new Date(article.published_at).toLocaleDateString()}
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                 {article.description}
@@ -96,5 +97,5 @@ export default function Blogs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

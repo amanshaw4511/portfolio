@@ -1,5 +1,5 @@
-import { projectData } from '@/config'
-import ProjectCard from '../components/ProjectCard'
+import { projectData } from "@/config";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
@@ -18,5 +18,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

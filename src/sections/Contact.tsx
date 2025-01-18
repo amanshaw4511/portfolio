@@ -1,5 +1,5 @@
-import { links } from '@/config'
-import { FaTwitter, FaLinkedin, FaDev, FaGithub } from 'react-icons/fa'
+import { links } from "@/config";
+import { FaTwitter, FaLinkedin, FaDev, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -12,9 +12,9 @@ function Contact() {
           Get in Touch
         </h2>
         <p className="text-lg mb-8 text-gray-700 dark:text-gray-300">
-          Have a question or want to discuss a project?
-          I’m always open to freelance or full-time opportunities.
-          Reach out using the email below or follow me on social media.
+          Have a question or want to discuss a project? I’m always open to
+          freelance or full-time opportunities. Reach out using the email below
+          or follow me on social media.
         </p>
 
         <a
@@ -77,7 +77,7 @@ function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

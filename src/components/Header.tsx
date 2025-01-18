@@ -1,5 +1,5 @@
-import { links, personal } from '@/config'
-import ThemeToggle from './ThemeToggle'
+import { links, personal } from "@/config";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   return (
@@ -36,7 +36,7 @@ export default function Header() {
                 Blogs
               </a>
             </li>
- 
+
             <li>
               <a
                 href="#contact"
@@ -62,5 +62,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
