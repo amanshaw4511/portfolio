@@ -54,9 +54,9 @@ export const projectData: ProjectData[] = [
   {
     title: "Personal Portfolio",
     description:
-      "My personal website showcasing past and present projects, integrated with a blog section for tech articles.",
-    techStack: ["Next.js", "Tailwind", "Vercel"],
-    githubLink: "https://github.com/amanshaw4511/amansaw-portfolio",
+      "My personal website showcasing past and present projects, integrated with a blog section for tech articles from dev.to.",
+    techStack: ["React", "Tailwind", "Cloudflare"],
+    githubLink: "https://github.com/amanshaw4511/portfolio",
     liveLink: "https://amansaw.com",
   },
 
