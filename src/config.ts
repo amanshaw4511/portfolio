@@ -47,7 +47,7 @@ export const projectData: ProjectData[] = [
     description:
       "Toy Redis Server implementation in java. Supports basic commands commands like GET, SET, INCR, LPUSH, LPOP, LRANGE etc. Supports time based expiry on data and concurrent consumers",
     techStack: ["Java", "TCP", "Concurrency", "Redis"],
-    githubLink: "https://github.com/amanshaw4511/fintech-dashboard",
+    githubLink: "https://github.com/amanshaw4511/redis-java",
     liveLink: "",
   },
   {
